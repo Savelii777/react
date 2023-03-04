@@ -1,0 +1,22 @@
+table {
+    width: 100%;
+}
+
+tr > td {
+    padding: 3px;
+}
+
+.p-paginator.p-component.p-paginator-top {
+    display: flex;
+    flex-direction: row;
+}
+
+.p-paginator.p-component.p-paginator-top > span, .paginator-buttons {
+    margin: auto auto 5px;
+}
+
+.p-paginator.p-component.p-paginator-top > span {
+    font-size: 15px;
+}
+
+

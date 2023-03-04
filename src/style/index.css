@@ -1,0 +1,34 @@
+
+body {
+    margin: 0;
+    line-height: 1.6;
+    font-size: 17px;
+    background: rgb(219,218,227);
+    background: linear-gradient(90deg, rgba(219,218,227,1) 0%, rgba(134,97,157,1) 100%);
+}
+
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+.container1 {
+    display: flex;
+    flex-direction: row;
+    max-width: 50%;
+    margin: 0 auto;
+}
+.container {
+    width: 50%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.main {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    margin: 110px auto;
+    text-align: center;
+}
