@@ -1,13 +1,14 @@
 import React, {useEffect, useState} from "react";
 import {UserForm} from "./UserForm";
+import {LazyList} from "./ListComponent";
 import "../../style/login/login.css"
 import {fetchLogin, fetchRegister, setAuthErrorMessage} from "../../store/actions/actionsAuth";
 import {useDispatch, useSelector} from "react-redux";
 import {MyMessage} from "../util/MyMessage";
 import {useNavigate} from "react-router-dom";
+import LazyListxls from "./LazyListxls"
 
 export function Login() {
-
     const errorMessage = useSelector(state => state.error.message)
     const [reg, setReg] = useState(false)
     const isAuthorized = useSelector(state => state.auth.isAuthorized)
@@ -41,6 +42,9 @@ export function Login() {
             }
             {errorMessage.length !== 0 &&
                 <MyMessage message={'Ошибка сервера 500'} className={'big-warning'}/>
+            }
+            {errorMessage.length === 0 &&
+                <LazyListxls/>
             }
         </div>
     )
